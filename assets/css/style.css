@@ -410,6 +410,40 @@ section:nth-child(even):not(.hero) { background: var(--light); }
 
 .transport-icon { margin-right: .4rem; }
 
+/* ── Funding ──────────────────────────────────────────── */
+.funding-intro {
+  font-size: 1.05rem;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.funding-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.funding-logos a { display: flex; align-items: center; }
+
+.funding-logos img {
+  height: 56px;
+  width: auto;
+  filter: grayscale(1);
+  opacity: .75;
+  transition: filter .2s, opacity .2s;
+}
+
+.funding-logos img:hover { filter: none; opacity: 1; }
+
+.funding-text {
+  font-size: .95rem;
+  color: var(--muted);
+  text-align: center;
+}
+
 /* ── Footer ───────────────────────────────────────────── */
 footer {
   background: var(--navy);

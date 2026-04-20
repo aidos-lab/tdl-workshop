@@ -30,7 +30,7 @@ layout: default
     <div class="section-line"></div>
 
     <div class="about-body">
-      <p>This workshop aims to bring together researchers and practicioners from the fields of topological data analysis and deep learning to foster collaboration and exchange of ideas. Through a combination of plenary talks, focused project work, and interactive sessions, we will explore the latest developments in topological deep learning and identify promising directions for future research. Some themes we hope to cover include, but are not limited to:</p>
+      <p>This workshop aims to bring together researchers and practicioners from the fields of topological data analysis and deep learning to foster collaboration and exchange of ideas. Through a combination of plenary talks, focused project work, and interactive sessions, we will explore the latest developments in topological deep learning and identify promising directions for future research. Some themes we hope to cover include, but are not limited, to:</p>
       <ul>
         <li><strong>Datasets and benchmarks:</strong> Topological data arises naturally in many real-world applications, such as biomolecular problems or transport networks. However, recent research highlights the limitations of current benchmark datasets to characterize the capabilities of graph learning methods. This motivates our first driving question: can we devise new benchmark data, intrinsically topological, that is well-suited for evaluating topological methods?</li>
         <li><strong>The expressivity vs. scalability dilemma:</strong> Much of the state-of-the-art AI research leverages higher compute capabilities to improve expressivity and performance. However, these demands of energy and computer resources cannot be satisfied by most users and are highly unsustainable and misaligned with the Sustainable Development Goals of the United Nations. Incorporating topological and geometric biases can significantly reduce model size without sacrificing performance, as demonstrated by equivariant networks—leveraging geometric group theory—and neural k-forms—leveraging differential geometry. We aim to contribute to this line of work by exploring new topological methods for the development of expressive yet scalable models.</li>
@@ -77,7 +77,7 @@ layout: default
       <tbody>
         <tr>
           <td class="sg-time">9:00</td>
-          <td class="ev-other" rowspan="2">Opening remarks</td>
+          <td class="ev-other" rowspan="2">Opening remarks<br><em>Bastian Rieck</em></td>
           <td class="ev-talk" rowspan="2">Plenary talk<br><em>Bei Wang</em></td>
           <td class="ev-talk" rowspan="2">Plenary talk<br><em>Michael Kerber</em></td>
           <td class="ev-work" rowspan="4">Focused project work</td>
@@ -244,5 +244,31 @@ layout: default
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- ── Funding ──────────────────────────────────────────── -->
+<section id="funding">
+  <div class="container">
+    <h2 class="section-title">Acknowledgements</h2>
+    <div class="section-line"></div>
+
+    <p class="funding-intro">This workshop is made possible thanks to the generous support of the following funding agencies and institutions:</p>
+
+    <div class="funding-logos">
+      <!-- Add funding agency logos here. Example:
+      <a href="https://..." target="_blank" rel="noopener">
+        <img src="{{ '/assets/img/logo_agency.svg' | relative_url }}" alt="Agency Name" />
+      </a>
+      -->
+      <a>
+        <img src="{{ '/assets/img/SNF_logo.svg' }}" alt="SNF" />
+      </a>
+    </div>
+
+    <p class="funding-text">
+      <!-- Add acknowledgement text here, e.g. grant numbers. -->
+        This workshop is supported by the Swiss National Science Foundation (SNF), Scientific Exchanges programme.
+    </p>
   </div>
 </section>
