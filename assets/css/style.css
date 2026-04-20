@@ -133,7 +133,7 @@ nav {
 
 /* ── Sections ─────────────────────────────────────────── */
 section { padding: 5rem 2rem; }
-section:nth-child(even) { background: var(--light); }
+section:nth-child(even):not(.hero) { background: var(--light); }
 
 .container { max-width: 900px; margin: 0 auto; }
 .container-wide { max-width: 1100px; margin: 0 auto; }
@@ -425,7 +425,7 @@ footer a:hover { color: var(--white); }
   opacity: .85;
 }
 
-.footer-logo--wide { height: 36px; }
+.footer-logo--wide { height: 48px; }
 
 /* ── Responsive ───────────────────────────────────────── */
 @media (max-width: 640px) {
