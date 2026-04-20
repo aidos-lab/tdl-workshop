@@ -371,21 +371,11 @@ section:nth-child(even):not(.hero) { background: var(--light); }
 .abstract-text.open { display: block; }
 
 /* ── Venue ────────────────────────────────────────────── */
-.venue-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-@media (max-width: 700px) {
-  .venue-grid { grid-template-columns: 1fr; }
-}
-
 .venue-map {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
+  margin-bottom: 2rem;
 }
 
 .venue-map img { width: 100%; height: auto; display: block; }
