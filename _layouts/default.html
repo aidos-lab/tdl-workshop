@@ -43,6 +43,7 @@
     btn.addEventListener('click', () => {
       const text = btn.nextElementSibling;
       const open = text.classList.toggle('open');
+      btn.closest('.speaker-card').classList.toggle('card-expanded', open);
       btn.textContent = open ? 'Hide abstract ▲' : 'Show abstract ▼';
     });
   });
