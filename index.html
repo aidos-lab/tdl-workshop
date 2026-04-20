@@ -1,0 +1,195 @@
+---
+layout: default
+---
+
+<!-- ── Hero ────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">University of Fribourg &bull; Switzerland</div>
+    <h1>Workshop on Topological Deep Learning</h1>
+    <p class="hero-meta">
+      June 22&ndash;26, 2026
+      <span>|</span>
+      Fribourg, Switzerland
+    </p>
+    <div class="hero-buttons">
+      <a href="#speakers" class="btn btn-primary">Invited Speakers</a>
+      <a href="#schedule" class="btn btn-outline">Schedule</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── About ────────────────────────────────────────────── -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About the Workshop</h2>
+    <div class="section-line"></div>
+
+    <div class="about-body">
+      <p>
+        <!-- Add a general description of the workshop here. -->
+        Description coming soon.
+      </p>
+    </div>
+
+    <div class="info-cards">
+      <div class="info-card">
+        <div class="label">Dates</div>
+        <div class="value">June 22&ndash;26, 2026</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Location</div>
+        <div class="value">University of Fribourg</div>
+      </div>
+      <div class="info-card">
+        <div class="label">City</div>
+        <div class="value">Fribourg, Switzerland</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Schedule ─────────────────────────────────────────── -->
+<section id="schedule">
+  <div class="container">
+    <h2 class="section-title">Schedule</h2>
+    <div class="section-line"></div>
+
+    <!--
+      To fill in the schedule, replace the placeholder block below with
+      day-block entries. Example structure:
+
+      <div class="day-block">
+        <div class="day-header">
+          <h3>Monday</h3>
+          <span class="day-date">June 22, 2026</span>
+        </div>
+        <table class="schedule-table">
+          <thead>
+            <tr><th>Time</th><th>Event</th><th>Speaker</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="time">09:00</td>
+              <td><span class="tag-talk">Talk</span> &nbsp;Title of talk</td>
+              <td>Speaker Name</td>
+            </tr>
+            <tr>
+              <td class="time">10:30</td>
+              <td><span class="tag-break">Coffee break</span></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      Available tags: tag-talk, tag-break, tag-social
+    -->
+
+    <div class="schedule-placeholder">
+      Schedule will be announced soon.
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Speakers ─────────────────────────────────────────── -->
+<section id="speakers">
+  <div class="container-wide">
+    <h2 class="section-title">Invited Speakers</h2>
+    <div class="section-line"></div>
+
+    <div class="speakers-grid">
+      {% for speaker in site.data.speakers %}
+      <div class="speaker-card">
+        <div class="speaker-header">
+          {% if speaker.photo %}
+            <img class="speaker-avatar" src="{{ speaker.photo | relative_url }}" alt="{{ speaker.name }}" />
+          {% else %}
+            <div class="speaker-avatar">{{ speaker.initials }}</div>
+          {% endif %}
+          <div class="speaker-info">
+            <h3>{{ speaker.name }}</h3>
+            <div class="affiliation">{{ speaker.affiliation }}</div>
+          </div>
+        </div>
+        <div class="speaker-body">
+          {% if speaker.talk_title %}
+            <div class="talk-title">&ldquo;{{ speaker.talk_title }}&rdquo;</div>
+          {% endif %}
+          {% if speaker.abstract %}
+            <button class="abstract-toggle">Show abstract ▼</button>
+            <div class="abstract-text">{{ speaker.abstract | markdownify }}</div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ── Venue ─────────────────────────────────────────────── -->
+<section id="venue">
+  <div class="container">
+    <h2 class="section-title">Getting There</h2>
+    <div class="section-line"></div>
+
+    <div class="venue-grid">
+
+      <div class="venue-map">
+        <!-- OpenStreetMap embed — no API key required -->
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=7.1478%2C46.7916%2C7.1658%2C46.8016&layer=mapnik&marker=46.7966%2C7.1568"
+          allowfullscreen
+          loading="lazy"
+          title="University of Fribourg map">
+        </iframe>
+      </div>
+
+      <div class="venue-info">
+        <h3>Venue</h3>
+        <p>
+          <strong>University of Fribourg</strong><br />
+          <!-- Add the specific building / room once confirmed -->
+          Fribourg, Switzerland
+        </p>
+
+        <h3>✈️ By Plane</h3>
+        <ul>
+          <li><strong>Geneva Airport (GVA)</strong> — ~1 h 20 min by train (direct IC)</li>
+          <li><strong>Zurich Airport (ZRH)</strong> — ~2 h by train (change at Bern)</li>
+          <li><strong>Basel EuroAirport (BSL)</strong> — ~1 h 30 min by train</li>
+          <li><strong>Bern Airport (BRN)</strong> — ~40 min by train</li>
+        </ul>
+
+        <h3>🚆 By Train</h3>
+        <p>
+          Fribourg has a main train station (<em>Fribourg/Freiburg</em>) with direct
+          connections to Geneva (~1 h 20 min), Bern (~25 min), Lausanne (~50 min),
+          and Zurich (~1 h 40 min). The university campus is a short bus or
+          funicular ride from the station.
+        </p>
+
+        <h3>🚌 From the Station</h3>
+        <ul>
+          <li><strong>Bus line 3 or 7</strong> towards the Pérolles campus area</li>
+          <li><strong>Funicular (Funi)</strong> connects lower town to upper town — free with a valid train ticket on the day of arrival</li>
+        </ul>
+
+        <h3>🚗 By Car</h3>
+        <p>
+          Fribourg is located on the A12 motorway between Lausanne and Bern.
+          Paid parking is available near the campus. We encourage participants
+          to travel by public transport where possible.
+        </p>
+
+        <h3>🏨 Accommodation</h3>
+        <p>
+          <!-- Add hotel recommendations or a link to a booking page -->
+          A list of recommended hotels will be provided closer to the event.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.workshop.name }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  {% seo %}
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand">TDL Workshop 2026</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#speakers">Speakers</a></li>
+    <li><a href="#venue">Venue</a></li>
+  </ul>
+</nav>
+
+{{ content }}
+
+<footer>
+  <p>
+    Workshop on Topological Deep Learning &mdash; University of Fribourg &mdash; June 22&ndash;26, 2026
+  </p>
+  <p style="margin-top:.5rem;">
+    Questions? Contact the organizers:
+    {% for contact in site.workshop.emails %}
+      <a href="mailto:{{ contact.address }}">{% if contact.name != "" %}{{ contact.name }}{% else %}{{ contact.address }}{% endif %}</a>{% unless forloop.last %} &bull; {% endunless %}
+    {% endfor %}
+  </p>
+</footer>
+
+<script>
+  document.querySelectorAll('.abstract-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const text = btn.nextElementSibling;
+      const open = text.classList.toggle('open');
+      btn.textContent = open ? 'Hide abstract ▲' : 'Show abstract ▼';
+    });
+  });
+</script>
+
+</body>
+</html>

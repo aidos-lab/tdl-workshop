@@ -1,0 +1,21 @@
+title: TDL Workshop 2026
+description: Workshop on Topological Deep Learning
+url: "https://workshop.topology.rocks"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+# Workshop details
+workshop:
+  name: Workshop on Topological Deep Learning
+  short_name: TDL Workshop 2026
+  dates: June 22–26, 2026
+  location: University of Fribourg, Switzerland
+  emails:
+    - address: "ines.garciaredondo@unifr.ch"
+      name: "Inés García Redondo"
+    - address: "xinyi.wang@unifr.ch"
+      name: "Elena Wang"

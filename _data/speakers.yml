@@ -1,0 +1,23 @@
+# Add speakers here. Fields:
+#   name        - Full name
+#   affiliation - Institution / university
+#   initials    - 1-2 letters shown as avatar placeholder (until you add a photo)
+#   photo       - Path to photo under assets/img/ (optional)
+#   talk_title  - Title of the talk
+#   abstract    - Talk abstract (use | for multi-line)
+#
+# Example entry (uncomment and fill in):
+#
+# - name: Jane Doe
+#   affiliation: ETH Zürich
+#   initials: JD
+#   talk_title: "Persistent Homology Meets Deep Learning"
+#   abstract: |
+#     In this talk we explore...
+
+- name: Speaker Name
+  affiliation: University / Institution
+  initials: "?"
+  talk_title: "Talk title to be announced"
+  abstract: |
+    Abstract to be added.
