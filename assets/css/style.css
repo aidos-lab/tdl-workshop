@@ -129,7 +129,7 @@ nav {
   opacity: .9;
 }
 
-.hero-logo--wide { height: 36px; }
+.hero-logo--wide { height: 48px; }
 
 .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
@@ -172,6 +172,8 @@ section:nth-child(even):not(.hero) { background: var(--light); }
 /* ── About ────────────────────────────────────────────── */
 .about-body { font-size: 1.05rem; color: var(--text); }
 .about-body p { margin-bottom: 1rem; }
+.about-body ul { padding-left: 1.4rem; }
+.about-body li { margin-bottom: .85rem; }
 
 .info-cards {
   display: grid;
