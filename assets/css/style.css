@@ -313,25 +313,28 @@ section:nth-child(even):not(.hero) { background: var(--light); }
 
 /* ── Speakers ─────────────────────────────────────────── */
 .speakers-grid {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .speaker-card {
-  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid var(--border);
 }
 
-.speaker-card:last-child { border-bottom: none; }
+.speaker-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 
 .speaker-header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
   align-items: center;
-  gap: 1.25rem;
-  padding: 1.25rem 1.5rem;
+  gap: 1rem;
 }
 
 .speaker-avatar {
@@ -345,49 +348,45 @@ section:nth-child(even):not(.hero) { background: var(--light); }
   align-items: center;
   justify-content: center;
   color: var(--white);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
-.speaker-info h3 { font-size: 1rem; color: var(--navy); margin-bottom: .1rem; }
-.speaker-info .affiliation { font-size: .84rem; color: var(--muted); }
+.speaker-info h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: .1rem; }
+.speaker-info .affiliation { font-size: .87rem; color: var(--muted); }
 
-.speaker-body { padding: 0; }
+.speaker-body {
+  padding-left: calc(52px + 1rem);
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
 
 .talk-title {
-  font-size: .95rem;
+  font-size: .97rem;
   font-weight: 500;
-  color: var(--text);
   font-style: italic;
+  color: var(--text);
 }
 
 .abstract-toggle {
+  align-self: flex-start;
   background: none;
-  border: 1px solid var(--border);
-  border-radius: 100px;
+  border: none;
   color: var(--teal);
-  font-size: .8rem;
+  font-size: .87rem;
   cursor: pointer;
-  padding: .3rem .9rem;
+  padding: 0;
   font-weight: 600;
-  white-space: nowrap;
-  transition: background .15s, border-color .15s;
 }
 
-.abstract-toggle:hover {
-  background: var(--light);
-  border-color: var(--teal);
-  text-decoration: none;
-}
+.abstract-toggle:hover { text-decoration: underline; }
 
 .abstract-text {
   display: none;
-  font-size: .95rem;
+  font-size: .97rem;
   color: var(--text);
   line-height: 1.75;
-  padding: 1.25rem 1.5rem 1.5rem calc(52px + 1.25rem + 1.5rem);
-  border-top: 1px solid var(--border);
-  background: var(--light);
 }
 
 .abstract-text.open { display: block; }
