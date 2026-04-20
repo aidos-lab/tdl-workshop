@@ -70,7 +70,7 @@ nav {
 
 /* ── Hero ─────────────────────────────────────────────── */
 .hero {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 60%, var(--teal) 100%);
+  background: linear-gradient(135deg, #050d16 0%, #0e2545 55%, #0a4a58 100%);
   color: var(--white);
   padding: 6rem 2rem 5rem;
   text-align: center;
@@ -386,10 +386,9 @@ section:nth-child(even) { background: var(--light); }
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
-  aspect-ratio: 4/3;
 }
 
-.venue-map iframe { width: 100%; height: 100%; border: none; }
+.venue-map img { width: 100%; height: auto; display: block; }
 
 .venue-info h3 { font-size: 1.1rem; color: var(--navy); margin: 1.5rem 0 .5rem; }
 .venue-info h3:first-child { margin-top: 0; }
@@ -404,12 +403,29 @@ footer {
   background: var(--navy);
   color: rgba(255,255,255,.65);
   text-align: center;
-  padding: 2rem;
+  padding: 2.5rem 2rem 2rem;
   font-size: .88rem;
 }
 
 footer a { color: rgba(255,255,255,.75); }
 footer a:hover { color: var(--white); }
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo {
+  height: 48px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: .85;
+}
+
+.footer-logo--wide { height: 36px; }
 
 /* ── Responsive ───────────────────────────────────────── */
 @media (max-width: 640px) {
