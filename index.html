@@ -55,39 +55,106 @@ layout: default
     <h2 class="section-title">Schedule</h2>
     <div class="section-line"></div>
 
-    <!--
-      To fill in the schedule, replace the placeholder block below with
-      day-block entries. Example structure:
-
-      <div class="day-block">
-        <div class="day-header">
-          <h3>Monday</h3>
-          <span class="day-date">June 22, 2026</span>
-        </div>
-        <table class="schedule-table">
-          <thead>
-            <tr><th>Time</th><th>Event</th><th>Speaker</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="time">09:00</td>
-              <td><span class="tag-talk">Talk</span> &nbsp;Title of talk</td>
-              <td>Speaker Name</td>
-            </tr>
-            <tr>
-              <td class="time">10:30</td>
-              <td><span class="tag-break">Coffee break</span></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      Available tags: tag-talk, tag-break, tag-social
-    -->
-
-    <div class="schedule-placeholder">
-      Schedule will be announced soon.
+    <div class="schedule-wrap">
+    <table class="schedule-grid">
+      <thead>
+        <tr>
+          <th class="sg-time"></th>
+          <th>Monday<small>22 Jun</small></th>
+          <th>Tuesday<small>23 Jun</small></th>
+          <th>Wednesday<small>24 Jun</small></th>
+          <th>Thursday<small>25 Jun</small></th>
+          <th>Friday<small>26 Jun</small></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="sg-time">9:00</td>
+          <td class="ev-other">Opening remarks</td>
+          <td class="ev-talk" rowspan="2">Plenary talk<br><em>Bei Wang</em></td>
+          <td class="ev-talk" rowspan="2">Plenary talk<br><em>Michael Kerber</em></td>
+          <td class="ev-work" rowspan="3">Focused project work</td>
+          <td class="ev-work" rowspan="4">Focused project work</td>
+        </tr>
+        <tr>
+          <td class="sg-time">9:30</td>
+          <td class="ev-talk" rowspan="3">Plenary talk<br><em>Kathryn Hess</em></td>
+        </tr>
+        <tr>
+          <td class="sg-time">10:00</td>
+          <td class="ev-talk" rowspan="2">Plenary talk<br><em>Mathieu Carrière</em></td>
+          <td class="ev-work" rowspan="2">Focused project work</td>
+        </tr>
+        <tr>
+          <td class="sg-time">10:30</td>
+          <td class="ev-break">Coffee break</td>
+        </tr>
+        <tr>
+          <td class="sg-time">11:00</td>
+          <td class="ev-break">Coffee break</td>
+          <td class="ev-break">Coffee break</td>
+          <td class="ev-break">Coffee break</td>
+          <td class="ev-work" rowspan="3">Focused project work</td>
+          <td class="ev-break">Coffee break</td>
+        </tr>
+        <tr>
+          <td class="sg-time">11:30</td>
+          <td class="ev-talk" rowspan="2">Plenary talk<br><em>Tolga Birdal</em></td>
+          <td class="ev-talk" rowspan="2">Plenary talk<br><em>Anthea Monod</em></td>
+          <td class="ev-work" rowspan="2">Focused project work</td>
+          <td class="ev-other" rowspan="2">Presentations &amp; Closing</td>
+        </tr>
+        <tr>
+          <td class="sg-time">12:00</td>
+        </tr>
+        <tr>
+          <td class="sg-time">12:30</td>
+          <td class="ev-lunch" rowspan="3">Lunch break</td>
+          <td class="ev-lunch" rowspan="3">Lunch break</td>
+          <td class="ev-lunch" rowspan="3">Lunch break</td>
+          <td class="ev-lunch" rowspan="3">Lunch break</td>
+          <td class="ev-lunch" rowspan="3">Farewell lunch</td>
+        </tr>
+        <tr><td class="sg-time">13:00</td></tr>
+        <tr><td class="sg-time">13:30</td></tr>
+        <tr>
+          <td class="sg-time">14:00</td>
+          <td class="ev-other" rowspan="2">Poster session</td>
+          <td class="ev-other" rowspan="2">Brainstorming session</td>
+          <td class="ev-work" rowspan="2">Focused project work</td>
+          <td class="ev-work" rowspan="2">Focused project work</td>
+          <td class="ev-empty"></td>
+        </tr>
+        <tr>
+          <td class="sg-time">14:30</td>
+          <td class="ev-empty"></td>
+        </tr>
+        <tr>
+          <td class="sg-time">15:00</td>
+          <td class="ev-break">Coffee break</td>
+          <td class="ev-break">Coffee break</td>
+          <td class="ev-break">Coffee break</td>
+          <td class="ev-break">Coffee break</td>
+          <td class="ev-empty"></td>
+        </tr>
+        <tr>
+          <td class="sg-time">15:30</td>
+          <td class="ev-other" rowspan="3">Poster session</td>
+          <td class="ev-other" rowspan="3">Project configuration</td>
+          <td class="ev-other" rowspan="3">Mid-workshop discussion</td>
+          <td class="ev-work" rowspan="3">Focused project work</td>
+          <td class="ev-empty"></td>
+        </tr>
+        <tr>
+          <td class="sg-time">16:00</td>
+          <td class="ev-empty"></td>
+        </tr>
+        <tr>
+          <td class="sg-time">16:30</td>
+          <td class="ev-empty"></td>
+        </tr>
+      </tbody>
+    </table>
     </div>
 
   </div>
@@ -154,40 +221,25 @@ layout: default
           Fribourg, Switzerland
         </p>
 
-        <h3>✈️ By Plane</h3>
+        <h3>By Plane</h3>
         <ul>
           <li><strong>Geneva Airport (GVA)</strong> — ~1 h 20 min by train (direct IC)</li>
-          <li><strong>Zurich Airport (ZRH)</strong> — ~2 h by train (change at Bern)</li>
+          <li><strong>Zurich Airport (ZRH)</strong> — ~2 h by train</li>
           <li><strong>Basel EuroAirport (BSL)</strong> — ~1 h 30 min by train</li>
           <li><strong>Bern Airport (BRN)</strong> — ~40 min by train</li>
         </ul>
 
-        <h3>🚆 By Train</h3>
+        <h3>By Train</h3>
         <p>
           Fribourg has a main train station (<em>Fribourg/Freiburg</em>) with direct
           connections to Geneva (~1 h 20 min), Bern (~25 min), Lausanne (~50 min),
-          and Zurich (~1 h 40 min). The university campus is a short bus or
-          funicular ride from the station.
+          and Zurich (~1 h 40 min). The university campus is a short bus ride or walk from the station.
         </p>
 
-        <h3>🚌 From the Station</h3>
+        <h3>From the Station</h3>
         <ul>
           <li><strong>Bus line 3 or 7</strong> towards the Pérolles campus area</li>
-          <li><strong>Funicular (Funi)</strong> connects lower town to upper town — free with a valid train ticket on the day of arrival</li>
         </ul>
-
-        <h3>🚗 By Car</h3>
-        <p>
-          Fribourg is located on the A12 motorway between Lausanne and Bern.
-          Paid parking is available near the campus. We encourage participants
-          to travel by public transport where possible.
-        </p>
-
-        <h3>🏨 Accommodation</h3>
-        <p>
-          <!-- Add hotel recommendations or a link to a booking page -->
-          A list of recommended hotels will be provided closer to the event.
-        </p>
       </div>
 
     </div>

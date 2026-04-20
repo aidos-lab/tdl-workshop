@@ -15,9 +15,44 @@
 #   abstract: |
 #     In this talk we explore...
 
-- name: Speaker Name
-  affiliation: University / Institution
-  initials: "?"
-  talk_title: "Talk title to be announced"
+- name: Kathryn Hess
+  affiliation: EPFL
+  initials: KH
+  talk_title: TBA
   abstract: |
-    Abstract to be added.
+    TBA
+
+- name: Tolga Birdal
+  affiliation: Imperial College London
+  initials: TB
+  talk_title: TBA
+  abstract: |
+    TBA
+
+- name: Bei Wang
+  affiliation: University of Utah
+  initials: BW
+  talk_title: TBA
+  abstract: |
+    TBA
+
+- name: Mathieu Carrière
+  affiliation: Centre Inria d'Université Côte d'Azur
+  initials: MC
+  talk_title: TBA
+  abstract: |
+    TBA
+
+- name: Anthea Monod
+  affiliation: Imperial College London
+  initials: AM
+  talk_title: TBA
+  abstract: |
+    TBA
+
+- name: Michael Kerber
+  affiliation: Graz University of Technology
+  initials: MK
+  talk_title: TBA
+  abstract: |
+    TBA

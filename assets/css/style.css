@@ -192,6 +192,60 @@ section:nth-child(even) { background: var(--light); }
   font-size: 1rem;
 }
 
+/* Weekly grid table */
+.schedule-wrap { overflow-x: auto; }
+
+.schedule-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .85rem;
+  min-width: 680px;
+}
+
+.schedule-grid thead th {
+  background: var(--navy);
+  color: var(--white);
+  padding: .6rem .75rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.schedule-grid thead th small {
+  display: block;
+  font-weight: 400;
+  opacity: .75;
+  font-size: .78rem;
+}
+
+.schedule-grid thead th.sg-time { width: 56px; }
+
+.schedule-grid td {
+  border: 1px solid #d0d8e4;
+  padding: .45rem .6rem;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.schedule-grid td.sg-time {
+  background: var(--navy);
+  color: rgba(255,255,255,.75);
+  font-size: .78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+  width: 56px;
+}
+
+/* Event type colours */
+.ev-talk   { background: #d6ede4; color: #1a5c42; font-weight: 500; }
+.ev-break  { background: #fef3cd; color: #856404; }
+.ev-lunch  { background: #fff0b3; color: #7a5c00; }
+.ev-work   { background: #ead5f5; color: #5a2d82; }
+.ev-other  { background: #d0e8f5; color: #0d5273; }
+.ev-empty  { background: #f8f9fa; }
+
 .day-block { margin-bottom: 2.5rem; }
 
 .day-header {
