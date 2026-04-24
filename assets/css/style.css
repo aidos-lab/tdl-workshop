@@ -359,6 +359,8 @@ section:nth-child(even):not(.hero) { background: var(--light); }
 }
 
 .speaker-info h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: .1rem; }
+.speaker-info h3 a { color: var(--navy); }
+.speaker-info h3 a:hover { color: var(--teal); text-decoration: none; }
 .speaker-info .affiliation { font-size: .87rem; color: var(--muted); }
 
 .speaker-body {

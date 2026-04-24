@@ -18,6 +18,7 @@
 - name: Kathryn Hess
   affiliation: EPFL
   initials: KH
+  website: https://www.epfl.ch/labs/hessbellwald-lab/hessbellwald/
   talk_title: TBA
   abstract: |
     TBA
@@ -25,6 +26,15 @@
 - name: Tolga Birdal
   affiliation: Imperial College London
   initials: TB
+  website: https://tolgabirdal.github.io/
+  talk_title: TBA
+  abstract: |
+    TBA
+
+- name: Bernadete Stolz
+  affiliation: Max Planck Institute of Biochemistry
+  initials: BW
+  website: https://bernadettestolz.me/
   talk_title: TBA
   abstract: |
     TBA
@@ -32,6 +42,7 @@
 - name: Bei Wang
   affiliation: University of Utah
   initials: BW
+  website: https://www.sci.utah.edu/~beiwang/
   talk_title: TBA
   abstract: |
     TBA
@@ -39,6 +50,7 @@
 - name: Mathieu Carrière
   affiliation: INRIA Sophia Antipolis
   initials: MC
+  website: https://www-sop.inria.fr/members/Mathieu.Carriere/
   talk_title: TBA
   abstract: |
     TBA
@@ -46,6 +58,7 @@
 - name: Anthea Monod
   affiliation: Imperial College London
   initials: AM
+  website: https://sites.google.com/view/antheamonod/home
   talk_title: TBA
   abstract: |
     TBA
@@ -53,6 +66,7 @@
 - name: Michael Kerber
   affiliation: Graz University of Technology
   initials: MK
+  website: https://www.geometrie.tugraz.at/kerber/
   talk_title: TBA
   abstract: |
     TBA

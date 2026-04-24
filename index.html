@@ -131,7 +131,7 @@ layout: default
         </tr>
         <tr>
           <td class="sg-time">14:00</td>
-          <td class="ev-other" rowspan="2">Poster session</td>
+          <td class="ev-other" rowspan="2">Plenary talk<br><em>Bernadette Stolz</td>
           <td class="ev-other" rowspan="2">Brainstorming session</td>
           <td class="ev-work" rowspan="2">Focused project work</td>
           <td class="ev-work" rowspan="2">Focused project work</td>
@@ -187,7 +187,7 @@ layout: default
             <div class="speaker-avatar">{{ speaker.initials }}</div>
           {% endif %}
           <div class="speaker-info">
-            <h3>{{ speaker.name }}</h3>
+            <h3>{% if speaker.website %}<a href="{{ speaker.website }}" target="_blank" rel="noopener">{{ speaker.name }}</a>{% else %}{{ speaker.name }}{% endif %}</h3>
             <div class="affiliation">{{ speaker.affiliation }}</div>
           </div>
         </div>
