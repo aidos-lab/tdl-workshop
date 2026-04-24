@@ -12,12 +12,18 @@
 
 <nav>
   <span class="nav-brand">TDL Workshop 2026</span>
-  <ul class="nav-links">
+  <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#schedule">Schedule</a></li>
     <li><a href="#speakers">Speakers</a></li>
     <li><a href="#venue">Venue</a></li>
     <li><a href="#funding">Funding</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
@@ -46,6 +52,23 @@
       btn.textContent = open ? 'Hide abstract ▲' : 'Show abstract ▼';
     });
   });
+
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      navToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Open navigation');
+      });
+    });
+  }
 </script>
 
 </body>
