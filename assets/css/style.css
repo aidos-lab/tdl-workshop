@@ -399,6 +399,33 @@ section:nth-child(even):not(.hero) { background: var(--light); }
 
 .abstract-text.open { display: block; }
 
+/* ── Participants ─────────────────────────────────────── */
+.participants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: .75rem;
+}
+
+.participant-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .85rem 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+.participant-name {
+  font-weight: 600;
+  color: var(--navy);
+  font-size: .95rem;
+  margin-bottom: .2rem;
+}
+
+.participant-affiliation {
+  font-size: .82rem;
+  color: var(--muted);
+}
+
 /* ── Venue ────────────────────────────────────────────── */
 .venue-map {
   border-radius: var(--radius);

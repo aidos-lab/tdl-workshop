@@ -59,9 +59,9 @@
   affiliation: Imperial College London
   initials: AM
   website: https://sites.google.com/view/antheamonod/home
-  talk_title: TBA
+  talk_title: Topology of Representation Dynamics in Large Language Models
   abstract: |
-    TBA
+    Topology has been remarkably successful at powerful tools for extracting robust and interpretable geometric information from complex high-dimensional data.  In this talk, I will explore how persistent homology can be used to study the evolving geometry of representation spaces in large language models (LLMs).  Through two case studies—adversarial influence and supervised alignment—I will show that persistent homology identifies stable topological signatures of representational change across a wide range of model architectures and scales.  Some examples I will overview include a characteristic topological compression induced by adversarial manipulations and distinct topological trajectories arising during alignment.  Our results demonstrate how topological methods can uncover meaningful structure in the latent spaces of modern foundation models and suggest new opportunities for applying topological data analysis to questions of learning, robustness, and representation in deep neural networks.
 
 - name: Michael Kerber
   affiliation: Graz University of Technology

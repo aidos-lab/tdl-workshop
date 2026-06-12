@@ -206,6 +206,23 @@ layout: default
   </div>
 </section>
 
+<!-- ── Participants ──────────────────────────────────────── -->
+<section id="participants">
+  <div class="container">
+    <h2 class="section-title">Participants</h2>
+    <div class="section-line"></div>
+
+    <div class="participants-grid">
+      {% for participant in site.data.participants %}
+      <div class="participant-card">
+        <div class="participant-name">{{ participant.name }}</div>
+        <div class="participant-affiliation">{{ participant.affiliation }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <!-- ── Venue ─────────────────────────────────────────────── -->
 <section id="venue">
   <div class="container">
