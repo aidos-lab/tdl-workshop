@@ -35,9 +35,9 @@
   affiliation: Max Planck Institute of Biochemistry
   initials: BS
   website: https://bernadettestolz.me/
-  talk_title: TBA
+  talk_title: Topological learning for spatial and dynamic biomedical data
   abstract: |
-    TBA
+    Topological data analysis (TDA) offers powerful tools for studying biological phenomena. In this talk, I will present recent applications to spatial and dynamic biomedical data. First, I will discuss topological model selection in tumour-induced angiogenesis, where TDA combined with approximate Bayesian computation enables parameter inference and objective comparison of spatial models. Second, I will present two relational TDA techniques based on Dowker and Witness complexes that encode spatial relation in multispecies data, i.e. datasets with multiple subtypes of data points. Our relational TDA features can extract biological insight and integrate naturally with popular machine learning approaches for spatial data, such as graph neural networks. Finally, I will show how we can apply path signatures to capture underlying structural relations in time series of multivariate dynamical processes, such as neural recordings.
 
 - name: Bei Wang
   affiliation: University of Utah
@@ -67,6 +67,7 @@
   affiliation: Graz University of Technology
   initials: MK
   website: https://www.geometrie.tugraz.at/kerber/
-  talk_title: TBA
+  talk_title: A computational pipeline for multi-parameter persistence
   abstract: |
-    TBA
+    Efficient computational tools for generating and processing multi-filtered filtrations have become increasingly available over the past few years. I will survey some of the algorithmic advances from our research group and demonstrate how they connect with each other to form computational pipelines. These tools enable multi-parameter analyses of point clouds of sizes that were previously out of reach.
+
