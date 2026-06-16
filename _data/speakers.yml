@@ -43,7 +43,7 @@
   affiliation: University of Utah
   initials: BW
   website: https://www.sci.utah.edu/~beiwang/
-  talk_title: Topological Perspectives on Representation Spaces: Exploration, Alignment, and Discovery
+  talk_title: "Topological Perspectives on Representation Spaces: Exploration, Alignment, and Discovery"
   abstract: |
     Modern scientific discovery and artificial intelligence increasingly rely on high-dimensional latent representations that capture complex structure, semantics, and functionality. Yet understanding the organization of these representation spaces remains a fundamental challenge. In this talk, I will present two complementary research efforts that leverage Topological Data Analysis, particularly the Mapper algorithm, to reveal hidden structure in complex data representations.
     The first project, Chemical Mapper, explores the latent spaces learned
