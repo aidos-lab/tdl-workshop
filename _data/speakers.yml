@@ -46,12 +46,9 @@
   talk_title: Topological Perspectives on Representation Spaces: Exploration, Alignment, and Discovery
   abstract: |
     Modern scientific discovery and artificial intelligence increasingly rely on high-dimensional latent representations that capture complex structure, semantics, and functionality. Yet understanding the organization of these representation spaces remains a fundamental challenge. In this talk, I will present two complementary research efforts that leverage Topological Data Analysis, particularly the Mapper algorithm, to reveal hidden structure in complex data representations.
-    
     The first project, Chemical Mapper, explores the latent spaces learned
     by geometric deep learning models for molecules. By constructing topological summaries of chemical latent spaces, Chemical Mapper enables visual exploration of the vast chemical landscape, uncovering meaningful patterns related to molecular scaffolds, functional groups, chemical properties, and pathways of structural and functional evolution. These topological representations provide an interpretable lens into how deep learning models organize chemical knowledge and support the discovery of novel compounds.
-    
     The second project, TopoAlign, extends topology-based analysis to the study of neural representations themselves. Rather than focusing solely on geometric similarity, TopoAlign introduces a topology-aware framework for comparing representations across models, layers, and modalities. Through coordinated Mapper graph visualizations, structural correspondence detection, and motif-based analysis, the framework reveals both global and local alignment patterns, offering new insights into how different models encode and organize information.
-    
     Together, these projects demonstrate how topology serves as a powerful bridge between visualization, representation learning, and scientific understanding. By capturing the global structure of high-dimensional representation spaces, topological approaches enable researchers to navigate complex domains such as chemical space and to uncover, compare, and interpret the internal organization of modern AI systems.
 
 - name: Mathieu Carrière
