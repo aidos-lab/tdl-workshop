@@ -56,9 +56,9 @@
   affiliation: INRIA Sophia Antipolis
   initials: MC
   website: https://www-sop.inria.fr/members/Mathieu.Carriere/
-  talk_title: TBA
+  talk_title: "Multi-Parameter Topological Data Analysis with MMA"
   abstract: |
-    TBA
+    Topological data analysis (TDA) is a rapidly growing area of data science, whose most common descriptor is persistent homology, which tracks the topological changes in growing families of subsets of the data set itself, called filtrations, and encodes them in an algebraic object, called a persistence module. The algorithmic and theoretical properties of persistence modules are now well understood in the single-parameter case, that is, when there is only one filtration (e.g., feature scale) to study. In contrast, much less is known in the multi-parameter case, where several filtrations (e.g., scale and density) are used simultaneously. Since multi-parameter persistence modules usually encode information that is invisible to their single-parameter counterparts, it is critical to build tractable proxies for them, ideally with some theoretical robustness guarantees. In this talk, I will introduce MMA (Multipersistence Module Approximation): an algorithm based on matching functions for computing instances of approximate decompositions of any multi-parameter persistence module, with some precision parameter δ > 0. By design, MMA can handle an arbitrary number of filtrations, and has bounded complexity and running time. Moreover, MMA is robust: when computed with so-called compatible matching functions, MMA produces approximate decompositions that preserve diagonal barcodes. Finally, I will present a range of applications where approximate decompositions produced by MMA can improve upon existing single-parameter TDA models. Joint work with: David Loiseaux, Andrew J. Blumberg
 
 - name: Anthea Monod
   affiliation: Imperial College London
