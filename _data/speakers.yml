@@ -19,9 +19,10 @@
   affiliation: EPFL
   initials: KH
   website: https://www.epfl.ch/labs/hessbellwald-lab/hessbellwald/
-  talk_title: TBA
+  talk_title: "A topological and geometric pipeline for detecting and analyzing cyclic cell processes"
   abstract: |
-    TBA
+    In this talk I will introduce CocycleHunter, a pipeline for identifying and analyzing circular structure in gene expression data, which integrates methods from topological data analysis with geometric lead-lag analysis. Our method provides a powerful, cohomology-based technique for estimating the phase of genes exhibiting cyclic expression patterns (gene cascades), which has been validated on synthetic RNA transcription models, as well as on real datasets.  I’ll explain the math behind the pipeline and illustrate its application to gene expression data, providing novel insights into how cell processes intertwine.
+    This is joint work, led by Kelly Maggs and Markus Youssef, with the collaboration of Cyril Pulver, Jovan Isa, Tâm Nguyên, Wouter Karthaus, Heather Harrington, and Paolo Dotto.
 
 - name: Tolga Birdal
   affiliation: Imperial College London
