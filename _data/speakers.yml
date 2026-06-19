@@ -28,9 +28,13 @@
   affiliation: Imperial College London
   initials: TB
   website: https://tolgabirdal.github.io/
-  talk_title: TBA
+  talk_title: "Topological Deep Learning for the Next Generation of AI4Science"
   abstract: |
-    TBA
+    Deep learning transformed artificial intelligence by exploiting structure. Convolutions leveraged the geometry of images, transformers leveraged the structure of sequences, and graph neural networks enabled learning on relational data. Yet many scientific systems—from particle interactions and physical fields to molecular assemblies, cellular processes, and complex engineered systems—cannot be faithfully described by pairwise relationships alone. Their behavior emerges from higher-order interactions, multiscale organization, and topological constraints. 
+    
+    This talk argues that topology is becoming the next organizing principle of AI4Science. Tolga will introduce Topological Deep Learning, a rapidly emerging framework that extends machine learning beyond graphs toward richer topological domains capable of representing interactions among groups, motifs, cycles, surfaces, and higher-dimensional structures. He will explore recent advances in higher-order message passing, sheaf learning, topological neural networks, neural operators, and transformer architectures under a common perspective.
+    
+    Tolga will then demonstrate how these ideas enable new capabilities across scientific discovery, including molecular foundation models, topology-aware generative models, learning on biological and physical systems, and operator learning for scientific simulation, presenting an emerging scientific ecosystem from challenges and opportunities to open source software.
 
 - name: Bernadette Stolz
   affiliation: Max Planck Institute of Biochemistry
