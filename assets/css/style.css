@@ -214,7 +214,48 @@ section:nth-child(even):not(.hero) { background: var(--light); }
 .schedule-note {
   font-size: .9rem;
   color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.venue-callout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff8f2;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: .9rem 1.25rem;
   margin-bottom: 2.5rem;
+}
+
+.venue-callout-icon {
+  font-size: 1.1rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.venue-callout-label {
+  display: block;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--accent);
+}
+
+.venue-callout-room {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+.venue-callout-sub {
+  display: block;
+  font-size: .85rem;
+  color: var(--muted);
+  margin-top: .15rem;
 }
 
 /* Weekly grid table */
